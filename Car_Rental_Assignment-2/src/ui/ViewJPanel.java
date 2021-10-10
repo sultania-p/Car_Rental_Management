@@ -220,9 +220,8 @@ public class ViewJPanel extends javax.swing.JPanel {
         );
 
         lblPlatformUsedFilter.setFont(new java.awt.Font("Lucida Bright", 0, 11)); // NOI18N
-        lblPlatformUsedFilter.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblPlatformUsedFilter.setText("Platform Used");
-        lblPlatformUsedFilter.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(204, 204, 204), new java.awt.Color(102, 102, 102)));
+        lblPlatformUsedFilter.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lblPlatformUsedFilter.setText("Platform Used:");
 
         comboBoxPlatformUsed.setFont(new java.awt.Font("Lucida Bright", 0, 11)); // NOI18N
         comboBoxPlatformUsed.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Uber", "Lyft", "Ola", "All" }));
@@ -234,9 +233,8 @@ public class ViewJPanel extends javax.swing.JPanel {
         });
 
         lblLastUpdatedValue.setFont(new java.awt.Font("Lucida Bright", 0, 11)); // NOI18N
-        lblLastUpdatedValue.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblLastUpdatedValue.setText("Last Updated On");
-        lblLastUpdatedValue.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(204, 204, 204), new java.awt.Color(102, 102, 102)));
+        lblLastUpdatedValue.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lblLastUpdatedValue.setText("Last Updated On:");
 
         txtLastUpdatedValue.setBackground(new java.awt.Color(204, 204, 204));
         txtLastUpdatedValue.setText("                   ");
@@ -291,9 +289,8 @@ public class ViewJPanel extends javax.swing.JPanel {
         lblPlatformUsed.setText("Platform Used:");
 
         lblManufacturedByFilter.setFont(new java.awt.Font("Lucida Bright", 0, 11)); // NOI18N
-        lblManufacturedByFilter.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblManufacturedByFilter.setText("Manufactured By");
-        lblManufacturedByFilter.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(204, 204, 204), new java.awt.Color(102, 102, 102)));
+        lblManufacturedByFilter.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lblManufacturedByFilter.setText("Manufactured By:");
 
         comboBoxManufacturedBy.setFont(new java.awt.Font("Lucida Bright", 0, 11)); // NOI18N
         comboBoxManufacturedBy.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Honda", "BMW", "Audi", "Tesla", "Suzuki", "Toyota", "All" }));
@@ -344,9 +341,8 @@ public class ViewJPanel extends javax.swing.JPanel {
         });
 
         lblSeatCapacityFilter.setFont(new java.awt.Font("Lucida Bright", 0, 11)); // NOI18N
-        lblSeatCapacityFilter.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblSeatCapacityFilter.setText("Seat Capacity");
-        lblSeatCapacityFilter.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(204, 204, 204), new java.awt.Color(102, 102, 102)));
+        lblSeatCapacityFilter.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lblSeatCapacityFilter.setText("Seat Capacity:");
 
         comboBoxMinimumSeatCapacity.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" }));
         comboBoxMinimumSeatCapacity.addActionListener(new java.awt.event.ActionListener() {
@@ -581,9 +577,9 @@ public class ViewJPanel extends javax.swing.JPanel {
                             .addComponent(lblLastUpdatedDate)
                             .addComponent(txtLastUpdated, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblCarAvailability)
-                            .addComponent(chkboxAvailable, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(chkboxAvailable, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblCarAvailability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(lblMaintenanceCertExpDate)
@@ -863,7 +859,8 @@ public class ViewJPanel extends javax.swing.JPanel {
                         maxDate = allUpdates.get(i); 
                 } 
         }
-        txtLastUpdatedValue.setText(String.valueOf(maxDate)); 
+        //txtLastUpdatedValue.setText(String.valueOf(maxDate)); 
+        txtLastUpdatedValue.setEditable(false);
         }
         
     }

@@ -16,53 +16,57 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="btnTitle" alignment="0" max="32767" attributes="0"/>
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="lblManufacturedDate" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblSerialNumber" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblModelNumber" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblManufacturedBy" alignment="1" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblSeatCapacity" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblCityOfOperation" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblMaintenanceCertExpDate" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblPlatformUsed" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblCarAvailability" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                  <Component id="btnTitle" alignment="0" max="32767" attributes="0"/>
                   <Group type="102" attributes="0">
-                      <Component id="txtSeatCapacity" linkSize="1" max="32767" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="lblSeatCapacityErrMsg" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="lblManufacturedDate" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblSerialNumber" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblModelNumber" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblManufacturedBy" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblSeatCapacity" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblCityOfOperation" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblMaintenanceCertExpDate" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblPlatformUsed" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblCarAvailability" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblTitleSubHeading" alignment="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="txtSeatCapacity" linkSize="1" max="32767" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="lblSeatCapacityErrMsg" max="32767" attributes="0"/>
+                          </Group>
+                          <Component id="btnSave" min="-2" pref="116" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="txtSerialNumber" linkSize="1" max="32767" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="lblSerialNumberErrMsg" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="txtModelNumber" linkSize="1" max="32767" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="lblModelNumberErrMsg" min="-2" pref="150" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="txtManufacturedDate" linkSize="1" max="32767" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="lblManufactureDateErrMsg" min="-2" pref="142" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="comboBoxManufacturerCreate" min="-2" pref="187" max="-2" attributes="0"/>
+                          <Component id="txtCityOfOperation" linkSize="1" alignment="0" pref="187" max="32767" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="txtMaintenanceCertExpDate" min="-2" pref="187" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="lblMaintenanceDateExpiryErrorMessage" max="32767" attributes="0"/>
+                          </Group>
+                          <Component id="comboBoxCreateUsedBy" alignment="0" min="-2" pref="187" max="-2" attributes="0"/>
+                          <Component id="chkboxAvailable" alignment="0" min="-2" pref="187" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
-                  <Component id="btnSave" min="-2" pref="116" max="-2" attributes="0"/>
-                  <Component id="lblTitleSubHeading" min="-2" max="-2" attributes="0"/>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="txtSerialNumber" linkSize="1" max="32767" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="lblSerialNumberErrMsg" max="32767" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="txtModelNumber" linkSize="1" max="32767" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="lblModelNumberErrMsg" min="-2" pref="150" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="txtManufacturedDate" linkSize="1" max="32767" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="lblManufactureDateErrMsg" min="-2" pref="142" max="-2" attributes="0"/>
-                  </Group>
-                  <Component id="comboBoxManufacturerCreate" min="-2" pref="187" max="-2" attributes="0"/>
-                  <Component id="txtCityOfOperation" linkSize="1" alignment="0" pref="187" max="32767" attributes="0"/>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="txtMaintenanceCertExpDate" min="-2" pref="187" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="lblMaintenanceDateExpiryErrorMessage" max="32767" attributes="0"/>
-                  </Group>
-                  <Component id="comboBoxCreateUsedBy" alignment="0" min="-2" pref="187" max="-2" attributes="0"/>
-                  <Component id="chkboxAvailable" alignment="0" min="-2" pref="187" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="0" pref="70" max="32767" attributes="0"/>
           </Group>

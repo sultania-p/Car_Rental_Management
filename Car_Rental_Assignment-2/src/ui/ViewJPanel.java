@@ -673,7 +673,8 @@ public class ViewJPanel extends javax.swing.JPanel {
 
     private void btnAllAvailableCarsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAllAvailableCarsActionPerformed
         String isAvailable = "true";
-        populateTableAvailable(isAvailable);       
+        populateTableAvailable(isAvailable);  
+        
     }//GEN-LAST:event_btnAllAvailableCarsActionPerformed
 
     private void comboBoxManufacturedByActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboBoxManufacturedByActionPerformed

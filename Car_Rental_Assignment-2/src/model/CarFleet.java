@@ -13,6 +13,7 @@ import java.util.List;
  * @author piyus
  */
 public class CarFleet {
+    
     private ArrayList<Car> carFleetDetails;
 
     public CarFleet() {
@@ -27,32 +28,35 @@ public class CarFleet {
         this.carFleetDetails = carFleetDetails;
     }
 
+    //add a new car item
     public Car addNewCar() {
-        Car newcar = new Car();
-        carFleetDetails.add(newcar);
-        return newcar;
+        Car newvehicle = new Car();
+        carFleetDetails.add(newvehicle);
+        return newvehicle;
     }
 
+    //delete the car record
     public void removeCar(Car c) {
         carFleetDetails.remove(c);
     }
     
+    public Car searchAvailableCar() {
+        for (Car vehicle : carFleetDetails) {
+            if (vehicle.isIsAvailable()== true) {
+                return vehicle;
+            }
+        }
+        return null;
+    }  
 
-    public Car searchCar(int id) {
-        for (Car car : carFleetDetails) {
-            if (car.getModelNumber() == id) {
-                return car;
+    public Car searchCar(int vehicleid) {
+        for (Car vehicle : carFleetDetails) {
+            if (vehicle.getModelNumber()== vehicleid) {
+                return vehicle;
             }
         }
         return null;
     }
     
-    public Car searchAvailableCar() {
-        for (Car car : carFleetDetails) {
-            if (car.isIsAvailable() == true) {
-                return car;
-            }
-        }
-        return null;
-    }
+
 }

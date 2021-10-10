@@ -5,6 +5,8 @@
  */
 package ui;
 import java.awt.CardLayout;
+import java.time.LocalDate;
+import model.Car;
 import model.CarFleet;
 
 /**
@@ -23,8 +25,60 @@ public class MainJFrame extends javax.swing.JFrame {
         initComponents();
         
         carFleetDetails = new CarFleet();
+        uploadCarData();
     }
 
+    public void uploadCarData(){
+        
+        //setting the default instances of car
+        Car car1 = carFleetDetails.addNewCar();
+        car1.setModelNumber(11111);
+        car1.setSerialNumber(1);
+        car1.setManufacturer("Honda");
+        car1.setManufacturedDate(LocalDate.parse("2014-12-18"));
+        car1.setSeatCapacity(2);
+        car1.setPlatformUsed("Uber");
+        car1.setIsAvailable(true);
+        car1.setLastUpdated(LocalDate.parse("2017-11-15"));
+        car1.setCity("New York");
+        car1.setMaintenanceCertExpDate(LocalDate.parse("2020-11-11"));     
+
+        Car car2 = carFleetDetails.addNewCar();
+        car2.setModelNumber(22222);
+        car2.setSerialNumber(2);
+        car2.setManufacturer("Tesla");
+        car2.setManufacturedDate(LocalDate.parse("2015-04-05"));
+        car2.setSeatCapacity(4);
+        car2.setPlatformUsed("Uber");
+        car2.setIsAvailable(false);
+        car2.setLastUpdated(LocalDate.parse("2021-10-01"));
+        car2.setCity("Boston");
+        car2.setMaintenanceCertExpDate(LocalDate.parse("2023-11-11"));   
+
+        Car car3 = carFleetDetails.addNewCar();
+        car3.setModelNumber(33333);
+        car3.setSerialNumber(3);
+        car3.setManufacturer("Tesla");
+        car3.setManufacturedDate(LocalDate.parse("2021-04-05"));
+        car3.setSeatCapacity(5);
+        car3.setPlatformUsed("Ola");
+        car3.setIsAvailable(true);
+        car3.setLastUpdated(LocalDate.parse("2021-10-01"));
+        car3.setCity("Los Angeles");
+        car3.setMaintenanceCertExpDate(LocalDate.parse("2025-12-11"));  
+        
+        Car car4 = carFleetDetails.addNewCar();
+        car4.setModelNumber(44444);
+        car4.setSerialNumber(4);
+        car4.setManufacturer("Audi");
+        car4.setManufacturedDate(LocalDate.parse("2019-08-04"));
+        car4.setSeatCapacity(3);
+        car4.setPlatformUsed("Lyft");
+        car4.setIsAvailable(true);
+        car4.setLastUpdated(LocalDate.parse("2021-10-01"));
+        car4.setCity("California");
+        car4.setMaintenanceCertExpDate(LocalDate.parse("2029-03-27")); 
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -112,7 +166,7 @@ public class MainJFrame extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(splitPane, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 669, Short.MAX_VALUE)
+            .addComponent(splitPane, javax.swing.GroupLayout.Alignment.TRAILING)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

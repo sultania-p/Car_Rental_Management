@@ -21,16 +21,11 @@ public class Car {
     private LocalDate manufacturedDate;
     private String city;
     private LocalDate maintenanceCertExpDate;
-    private String usedByApp;
+    //usedByApp for the CarFleet which platform is being used.
+    private String platformUsed;
     private boolean isAvailable;
     private LocalDate lastUpdated;
 
-    private static int counter = 0;
-    
-    public Car() {
-        counter++;
-        modelNumber = counter;
-    }
 
     public int getSerialNumber() {
         return serialNumber;
@@ -85,12 +80,12 @@ public class Car {
         this.seatCapacity = seatCapacity;
     }
 
-    public String getUsedByApp() {
-        return usedByApp;
+    public String getPlatformUsed() {
+        return platformUsed;
     }
 
-    public void setUsedByApp(String usedByApp) {
-        this.usedByApp = usedByApp;
+    public void setPlatformUsed(String platformUsed) {
+        this.platformUsed = platformUsed;
     }
 
     public LocalDate getLastUpdated() {
@@ -117,12 +112,5 @@ public class Car {
         this.maintenanceCertExpDate = maintenanceCertExpDate;
     }
 
-    public static int getCounter() {
-        return counter;
-    }
-
-    public static void setCount(int counter) {
-        Car.counter = counter;
-    }
     
 }

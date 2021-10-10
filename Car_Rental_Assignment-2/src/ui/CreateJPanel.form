@@ -21,14 +21,14 @@
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
                   <Component id="lblManufacturedDate" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblCarSerialNum" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblCarModelNum" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblCarManufacturer" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblSerialNumber" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblModelNumber" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblManufacturedBy" alignment="1" min="-2" max="-2" attributes="0"/>
                   <Component id="lblSeatCapacity" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblCity" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblCityOfOperation" min="-2" max="-2" attributes="0"/>
                   <Component id="lblMaintenanceCertExpDate" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblUsedBy" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblPlatformUsed" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblCarAvailability" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -40,31 +40,31 @@
                   <Component id="btnSave" min="-2" pref="116" max="-2" attributes="0"/>
                   <Component id="lblTitleSubHeading" min="-2" max="-2" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="txtSerialNum" linkSize="1" max="32767" attributes="0"/>
+                      <Component id="txtSerialNumber" linkSize="1" max="32767" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="lblSerialNumErrMsg" max="32767" attributes="0"/>
+                      <Component id="lblSerialNumberErrMsg" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="txtModelNum" linkSize="1" max="32767" attributes="0"/>
+                      <Component id="txtModelNumber" linkSize="1" max="32767" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="lblModelNumErrMsg" min="-2" pref="150" max="-2" attributes="0"/>
+                      <Component id="lblModelNumberErrMsg" min="-2" pref="150" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="txtManufacturedDate" linkSize="1" max="32767" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="lblManuDateErrMsg" min="-2" pref="150" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="lblManufactureDateErrMsg" min="-2" pref="142" max="-2" attributes="0"/>
                   </Group>
                   <Component id="comboBoxManufacturerCreate" min="-2" pref="187" max="-2" attributes="0"/>
-                  <Component id="txtCity" linkSize="1" alignment="0" pref="187" max="32767" attributes="0"/>
+                  <Component id="txtCityOfOperation" linkSize="1" alignment="0" pref="187" max="32767" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="txtMaintenanceCertExpDate" min="-2" pref="187" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="lblMaintDateExpErrMsg" max="32767" attributes="0"/>
+                      <Component id="lblMaintenanceDateExpiryErrorMessage" max="32767" attributes="0"/>
                   </Group>
                   <Component id="comboBoxCreateUsedBy" alignment="0" min="-2" pref="187" max="-2" attributes="0"/>
                   <Component id="chkboxAvailable" alignment="0" min="-2" pref="187" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="0" pref="76" max="32767" attributes="0"/>
+              <EmptySpace min="0" pref="70" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -77,19 +77,19 @@
               <Component id="lblTitleSubHeading" min="-2" pref="27" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="txtModelNum" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblModelNumErrMsg" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblCarModelNum" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtModelNumber" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblModelNumberErrMsg" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblModelNumber" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lblCarSerialNum" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtSerialNum" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblSerialNumErrMsg" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblSerialNumber" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtSerialNumber" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblSerialNumberErrMsg" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lblCarManufacturer" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblManufacturedBy" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="comboBoxManufacturerCreate" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -102,27 +102,27 @@
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="lblManufacturedDate" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtManufacturedDate" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblManuDateErrMsg" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblManufactureDateErrMsg" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lblCity" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtCity" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblCityOfOperation" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtCityOfOperation" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="lblMaintenanceCertExpDate" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtMaintenanceCertExpDate" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblMaintDateExpErrMsg" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblMaintenanceDateExpiryErrorMessage" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lblUsedBy" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblPlatformUsed" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="comboBoxCreateUsedBy" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblCarAvailability" min="-2" max="-2" attributes="0"/>
                   <Component id="chkboxAvailable" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
@@ -142,24 +142,24 @@
         <Property name="text" type="java.lang.String" value="Create Car"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblCarModelNum">
+    <Component class="javax.swing.JLabel" name="lblModelNumber">
       <Properties>
         <Property name="text" type="java.lang.String" value="Model Number*:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblCarSerialNum">
+    <Component class="javax.swing.JLabel" name="lblSerialNumber">
       <Properties>
         <Property name="text" type="java.lang.String" value="Serial Number*:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblCarManufacturer">
+    <Component class="javax.swing.JLabel" name="lblManufacturedBy">
       <Properties>
         <Property name="text" type="java.lang.String" value="Manufacturer:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="lblManufacturedDate">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Manufactured Date:"/>
+        <Property name="text" type="java.lang.String" value="Manufactured Date*:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="lblSeatCapacity">
@@ -167,31 +167,31 @@
         <Property name="text" type="java.lang.String" value="Seat Capacity:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblUsedBy">
+    <Component class="javax.swing.JLabel" name="lblPlatformUsed">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Platform Used:"/>
+        <Property name="text" type="java.lang.String" value="Platform Used*:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblCity">
+    <Component class="javax.swing.JLabel" name="lblCityOfOperation">
       <Properties>
         <Property name="text" type="java.lang.String" value="City Of Operation:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="lblMaintenanceCertExpDate">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Maintenance Certificate Expiry Date:"/>
+        <Property name="text" type="java.lang.String" value="Maintenance Certificate Expiry Date*:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtModelNum">
+    <Component class="javax.swing.JTextField" name="txtModelNumber">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtModelNumActionPerformed"/>
-        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtModelNumKeyPressed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtModelNumberActionPerformed"/>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtModelNumberKeyPressed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtSerialNum">
+    <Component class="javax.swing.JTextField" name="txtSerialNumber">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtSerialNumActionPerformed"/>
-        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtSerialNumKeyPressed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtSerialNumberActionPerformed"/>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtSerialNumberKeyPressed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="txtManufacturedDate">
@@ -211,10 +211,10 @@
         <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtSeatCapacityKeyPressed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtCity">
+    <Component class="javax.swing.JTextField" name="txtCityOfOperation">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtCityActionPerformed"/>
-        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtCityKeyPressed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtCityOfOperationActionPerformed"/>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtCityOfOperationKeyPressed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="txtMaintenanceCertExpDate">
@@ -236,7 +236,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSaveActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel1">
+    <Component class="javax.swing.JLabel" name="lblCarAvailability">
       <Properties>
         <Property name="text" type="java.lang.String" value="Car Availability:"/>
       </Properties>
@@ -266,12 +266,12 @@
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblModelNumErrMsg">
+    <Component class="javax.swing.JLabel" name="lblModelNumberErrMsg">
       <Properties>
         <Property name="text" type="java.lang.String" value="           "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblSerialNumErrMsg">
+    <Component class="javax.swing.JLabel" name="lblSerialNumberErrMsg">
       <Properties>
         <Property name="text" type="java.lang.String" value="           "/>
       </Properties>
@@ -284,12 +284,12 @@
         <Property name="text" type="java.lang.String" value="Fields mark with * are mandatory"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblManuDateErrMsg">
+    <Component class="javax.swing.JLabel" name="lblManufactureDateErrMsg">
       <Properties>
         <Property name="text" type="java.lang.String" value="           "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblMaintDateExpErrMsg">
+    <Component class="javax.swing.JLabel" name="lblMaintenanceDateExpiryErrorMessage">
       <Properties>
         <Property name="text" type="java.lang.String" value="           "/>
       </Properties>

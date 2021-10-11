@@ -78,6 +78,18 @@ public class MainJFrame extends javax.swing.JFrame {
         car4.setLastUpdated(LocalDate.parse("2021-10-01"));
         car4.setCity("California");
         car4.setMaintenanceCertExpDate(LocalDate.parse("2029-03-27")); 
+        
+        Car car5 = carFleetDetails.addNewCar();
+        car5.setModelNumber(55555);
+        car5.setSerialNumber(5);
+        car5.setManufacturer("Suzuki");
+        car5.setManufacturedDate(LocalDate.parse("2017-10-24"));
+        car5.setSeatCapacity(4);
+        car5.setPlatformUsed("Uber");
+        car5.setIsAvailable(false);
+        car5.setLastUpdated(LocalDate.parse("2021-10-10"));
+        car5.setCity("California");
+        car5.setMaintenanceCertExpDate(LocalDate.parse("2021-03-19")); 
     }
     /**
      * This method is called from within the constructor to initialize the form.

@@ -204,7 +204,7 @@ public class CreateJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(btnTitle, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
+                        .addGap(30, 30, 30)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(lblManufacturedDate)
                             .addComponent(lblSerialNumber)
@@ -317,7 +317,6 @@ public class CreateJPanel extends javax.swing.JPanel {
             lblMaintenanceDateExpiryErrorMessage.setText("");
                 isValidForm = true;
             }
-
             catch (Exception e)
             {
             lblMaintenanceDateExpiryErrorMessage.setText("Invalid Date format entered");
@@ -332,7 +331,6 @@ public class CreateJPanel extends javax.swing.JPanel {
                 lblManufactureDateErrMsg.setText("");
                 isValidForm = true;
             }
-
             catch (Exception e)
             {
                 lblManufactureDateErrMsg.setText("Invalid Date format entered");
@@ -375,7 +373,7 @@ public class CreateJPanel extends javax.swing.JPanel {
             car.setIsAvailable(IsAvailable);
             car.setLastUpdated(lastUpdated);
 
-            JOptionPane.showMessageDialog(this, "New Car Record Added");
+            JOptionPane.showMessageDialog(this, "New car record added");
 
             txtModelNumber.setText("");
             txtSerialNumber.setText("");
@@ -421,7 +419,7 @@ public class CreateJPanel extends javax.swing.JPanel {
         if(Character.isLetter(modelNumberKeyPressed)){
             isValidForm = false;
             txtModelNumber.setEditable(false);
-            lblModelNumberErrMsg.setText("Please enter number Only!");
+            lblModelNumberErrMsg.setText("Please enter number only!");
             mandatoryFieldValidation();
         }
         else
@@ -439,7 +437,7 @@ public class CreateJPanel extends javax.swing.JPanel {
         if(Character.isLetter(NumPressed)){
             isValidForm = false;
             txtSerialNumber.setEditable(false);
-            lblSerialNumberErrMsg.setText("Please enter number Only!");
+            lblSerialNumberErrMsg.setText("Please enter number only!");
             mandatoryFieldValidation();
         }
         else
@@ -462,7 +460,7 @@ public class CreateJPanel extends javax.swing.JPanel {
         if(Character.isLetter(seatNumberKeyPressed)){
             isValidForm = false;
             txtSeatCapacity.setEditable(false);
-            lblSeatCapacityErrMsg.setText("Please enter number Only!");
+            lblSeatCapacityErrMsg.setText("Please enter number only!");
             mandatoryFieldValidation();
         }
         else

@@ -26,7 +26,6 @@ public class Car {
     private boolean isAvailable;
     private LocalDate lastUpdated;
 
-
     public int getSerialNumber() {
         return serialNumber;
     }
